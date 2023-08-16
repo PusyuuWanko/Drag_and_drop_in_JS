@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>ドロップアンドドロップのサンプルHTML</title>
+<style>
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.yokoori {
+  display: flex;
+  flex-wrap: wrap;
+}
+.app_link {
+  text-decoration: none;
+  color: #fff000;
+  transition: all 0.1s;
+  color: #fff000;
+}
+.app_link:hover {
+  color: #fff000;
+}
+.app_link:active {
+  background-color: rgba(10,255,10,0.2);
+  color: #ffffff;
+}
+.app_box-1 {
+  height: 40px;
+  padding: 5px;
+  background-color: #ccc;
+  border-radius: 5px;
+}
+.app-name {
+  @extend .app_box-1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.app_name {
+  font-size: 12px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-shadow: 1px 1px #000; 
+}
+.app_wrapper {
+  text-align: center;
+  margin: 15px;
+  width: 50px;
+  height: 80px;
+  display: inline-block;
+}
+</style>
+<!--
+    *----------------------------------
+    |  ThisPageVersion: 1.0.0       |
+    |  © 2021-2023 By Pusyuu        |
+    |  LastUpdate: 2023-08-17       |
+    |  License: MIT License         |
+    |  ・。・プシューページ㌨       |
+  ----------------------------------*
+-->
+</head>
+<body>
+  <div class="yokoori" id="app">
+    <a class="app_link draggable-item" href="#">
+      <div class="app_wrapper" draggable="true">
+        <div class="app_box-1"><img src="http://21emon.wjg.jp/SystemFolder/IconData/img-1.png" alt="image of app" width="100%" height="100%"></div>
+        <p class="app_name">APP</p>
+      </div>
+    </a>
+    <a class="app_link draggable-item" href="#">
+      <div class="app_wrapper" draggable="true">
+        <div class="app_box-1"><img src="http://21emon.wjg.jp/SystemFolder/IconData/img-1.png" alt="image of app" width="100%" height="100%"></div>
+        <p class="app_name">APP</p>
+      </div>
+    </a>
+    <a class="app_link draggable-item" href="#">
+      <div class="app_wrapper" draggable="true">
+        <div class="app_box-1"><img src="http://21emon.wjg.jp/SystemFolder/IconData/img-1.png" alt="image of app" width="100%" height="100%"></div>
+        <p class="app_name">APP</p>
+      </div>
+    </a>
+    <a class="app_link draggable-item" href="#">
+      <div class="app_wrapper" draggable="true">
+        <div class="app_box-1"><img src="http://21emon.wjg.jp/SystemFolder/IconData/img-1.png" alt="image of app" width="100%" height="100%"></div>
+        <p class="app_name">APP</p>
+      </div>
+    </a>
+    <a class="app_link draggable-item" href="#">
+      <div class="app_wrapper" draggable="true">
+        <div class="app_box-1"><img src="http://21emon.wjg.jp/SystemFolder/IconData/img-1.png" alt="image of app" width="100%" height="100%"></div>
+        <p class="app_name">APP</p>
+      </div>
+    </a>
+    <a class="app_link draggable-item" href="#">
+      <div class="app_wrapper" draggable="true">
+        <div class="app_box-1"><img src="http://21emon.wjg.jp/SystemFolder/IconData/img-1.png" alt="image of app" width="100%" height="100%"></div>
+        <p class="app_name">APP</p>
+      </div>
+    </a>
+  </div>
+<script src="./lop-and-drop-in.js"></script>
+</body>
+</html>
