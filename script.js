@@ -1,8 +1,8 @@
 /*****************************************
   *----------------------------------
-  |  ThisStyleVersion: 1.1.1      |
+  |  ThisStyleVersion: 1.1.2      |
   |  © 2021-2023 By Pusyuu        |
-  |  LastUpdate: 2023-08-17       |
+  |  LastUpdate: 2023-08-18       |
   |  License: MIT License         |
   |  (^U^)PusyuuJsDesu            |
 ----------------------------------*
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // ローカルストレージの順番を更新
   function updateLocalStorageOrder() {
-    const appLinkElements = document.querySelectorAll('.app_link');
+    const appLinkElements = document.querySelectorAll('.draggable-item');
     const order = Array.from(appLinkElements).map(item => item.outerHTML);
     localStorage.setItem('appOrder', JSON.stringify(order));
   }
